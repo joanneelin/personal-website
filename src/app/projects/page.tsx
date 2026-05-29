@@ -19,7 +19,7 @@ const softwareProjects: SoftwareProject[] = [
     description: 'Coming soon.',
     url: null,
     thumbnail: null,
-  },
+  }/*,
   {
     name: 'Board of Advisors',
     description: 'Coming soon. (Austin Marchese)',
@@ -43,7 +43,7 @@ const softwareProjects: SoftwareProject[] = [
     description: 'Coming soon. (Austin Marchese)',
     url: null,
     thumbnail: null,
-  },
+  },*/
 ];
 
 export const metadata: Metadata = {
