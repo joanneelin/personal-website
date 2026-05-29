@@ -1,0 +1,115 @@
+/* real cow game styles.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+#container_one {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(116, 202, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    touch-action: none;
+}
+
+#container_two {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(75, 172, 202);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 7px;
+    touch-action: none;
+}
+
+.item {
+    border-radius: 50%;
+    touch-action: none;
+    user-select: none;
+    position: relative;
+}
+
+.one {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(245, 230, 99);
+    border: 10px solid rgba(136, 136, 136, .5);
+    top: 0px;
+    left: 0px;
+}
+
+.two {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(196, 241, 190, 1);
+    border: 10px solid rgba(136, 136, 136, .5);
+    top: 30%;
+    left: 10%;
+}
+
+.three {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(0, 255, 231);
+    border: 10px solid rgba(136, 136, 136, .5);
+    top: -40%;
+    left: -10%;
+}
+
+.four {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(233, 210, 244);
+    border: 10px solid rgba(136, 136, 136, .5);
+    top: -10%;
+    left: 5%;
+}
+
+.item:active {
+    opacity: .75;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+.article_50 {
+    /*float: left;*/
+    /*padding: 20px;*/
+    width: 50%;
+    background-color: #88AD72;
+    /*height: 700px; */
+    border-style: solid;
+  }
+  
+  .article_25 {
+    /*float: left;*/
+    /*padding: 20px;*/
+    width: 25%;
+    background-color: #AF4C4C;
+    /*height: 700px; */
+    text-align: center;
+    border-style: solid;
+  }

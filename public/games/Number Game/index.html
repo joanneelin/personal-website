@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>number game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="number%20game%20styles%20copy.css">
+</head>
+<body>
+  <div class="common">
+
+    <header>
+      <h1>Number Game</h1>
+    </header>
+
+    <div class="col-container">
+
+    <article class="article_50 col">
+      <h3>How to play this game: </h3>
+      <p> Set up your four digit secret number</p>
+      <p>    &nbsp;&nbsp;&nbsp; The 4 digit number may not start with a 0 and it can not have repeating digits. </p>        
+      <p> Follow the <span class="arrow"><==</span> </p>
+      <p> 1. Press the "start" button </p>
+      <p> 2. Guess the computer's secret number </p>
+      <p>    &nbsp;&nbsp;&nbsp; Input a 4 digit number and press enter. </p>
+      <p>    &nbsp;&nbsp;&nbsp; The computer will return your clues in your clue list on the bottom. </p>
+      <p> 3. Computer guesses your secret number </p>
+      <p>    &nbsp;&nbsp;&nbsp; If any of the numbers that the computer guesses matches any of your secret numbers but aren't in the same spot, return a B.  </p>
+      <p>    &nbsp;&nbsp;&nbsp; Otherwise, return an A if they are in the same spot. </p>
+      <p>    &nbsp;&nbsp;&nbsp; Enter how many A's and B's there are and then press the next round button. </p>
+      <p> 4. Repeat steps 2 and 3 until you, or the computer, win by guessing the other's secret number!</p>
+    </article>
+
+    <div class="article_25 col"> 
+      <h2> Guess the Computer's Number </h2>
+      <div class="gallery-text_70">
+        <button class="button button1 inner" id="startthegamebutton" type="button" onclick="createsecretnumber()">start</button> 
+        <p> Input a four digit number </p>
+        <input type="number" name="abc" id="abc" min="1000" max="19999"><br>
+        <p></p>
+        <button class="buttonforothers button2 inner" id="enterbutton" type="button" onclick="myMethod(document.getElementById('abc').value)">enter</button>
+        <p id="demo2"></p>
+      </div>
+      <div class="gallery-text_30">
+        <p class="arrow" id="arrow1"><==</p>
+        <div style="clear:both;"></div>
+        <p class="arrow" id="enterarrow"><==</p>
+      </div>  
+    </div>
+
+    <div class="article_25 col"> 
+      <h2> Computer Guesses Your Number </h2>
+      <p id="computersguess" style="color: rgb(188, 255, 126);"></p> 
+
+        <div class="gallery-text_70">
+          <form action="/action_page.php">
+            <label for="A">How many A</label>
+            <select id="a_value" name="a_value">
+              <option value="0">0A</option>
+              <option value="1">1A</option>
+              <option value="2">2A</option>
+              <option value="3">3A</option>
+              <option value="4">4A</option>
+            </select>
+          </form>
+ 
+          <form action="/action_page.php">
+            <label for="B">How many B</label>
+            <select id="b_value" name="b_value">
+              <option value="0">0B</option>
+              <option value="1">1B</option>
+              <option value="2">2B</option>
+              <option value="3">3B</option>
+              <option value="4">4B</option>
+            </select>
+          </form>
+          <p></p>
+          <button class="buttonforothers button2 inner" id="nextroundbutton" type="button" onclick="nextround(document.getElementById('a_value').value, document.getElementById('b_value').value)">next round</button>
+          <p id="computersclue"></p>
+        </div>
+        <div class="gallery-text_30">
+          <p class="arrow" id="entercomputerguessnumber"><==</p>
+          <p> </p>
+        </div> 
+    </div>  
+  </div>  
+    
+    <p hidden> id="demo">This is a demonstration.</p>
+
+    <script src="number%20game%20copy.js"></script>
+
+    </body>
+    </html>

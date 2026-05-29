@@ -1,0 +1,105 @@
+/* number game styles.css */
+  
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.col-container {
+    display: table; /* Make the container element behave like a table */
+    width: 100%; /* Set full-width to expand the whole page */
+}
+
+.col {
+    display: table-cell; /* Make elements inside the container behave like table cells */
+}
+
+.common {
+    word-break: normal;
+}
+
+.gallery-text_70 {
+    float: left;
+    width: 70%;
+    font-size: 17px;
+    color: rgb(65, 11, 82);
+    font-family: 'Trebuchet MS';
+}
+
+.gallery-text_30 {
+  float: left;
+  width: 30%;
+}
+
+  .arrow {
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(188, 255, 126);
+  }
+  
+  .button {
+    background-color: rgb(184, 219, 245);
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-family: 'Trebuchet MS';
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button1 {border-radius: 12px;}
+
+  .buttonforothers {
+    background-color: rgb(184, 219, 245);
+    border: none;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    font-family:'Trebuchet MS';
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button2 {border-radius: 2px;}
+
+  header {
+    background-color: #7294AD;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  .article_50 {
+    /*float: left;*/
+    /*padding: 20px;*/
+    width: 50%;
+    background-color: #88AD72;
+    /*height: 700px; */
+    border-style: solid;
+    padding: 12px;
+  }
+  
+  .article_25 {
+    /*float: left;*/
+    /*padding: 20px;*/
+    width: 25%;
+    background-color: #AF4C4C;
+    /*height: 700px; */
+    text-align: center;
+    border-style: solid;
+  }
+
+@media (max-width: 600px) {
+  .col-container { display: block; }
+  .col { display: block; }
+  .article_50, .article_25 { width: 100%; overflow: hidden; padding: 12px; text-align: left; }
+}

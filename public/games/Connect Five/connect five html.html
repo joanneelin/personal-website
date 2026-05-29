@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>connect five game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="connect five styles.css">
+</head>
+<body>
+  <div id="svg_div" style="float: left;" onclick="getCursorPosition(svg_div, event)"></div>
+
+  <div>
+    <button id="stop" onclick="can_create_circle = false">stop</button>
+    <button id="all_black" onclick="black_tile = true; can_create_circle = true; take_turn = false;">all black</button>
+    <button id="all_white" onclick="black_tile = false; can_create_circle = true; take_turn = false;">all white</button>
+    <button id="whats_next" onclick="check_all_tiles_in_board()">what is next</button>
+    <button id="take_turns" onclick="take_turn = true; can_create_circle = true">take turns</button>
+    <button onclick="undo_tiles()">undo</button>
+    <br></br>
+    <p id="demo" style="float: left;"></p>
+    <br></br>
+    <p id="score"></p>
+    <p id="scoreh"></p>
+    <p id="score1"></p>
+    <p id="score1h"></p>
+    <p id="score2"></p>
+    <p id="score2h"></p>
+    <p id="score3"></p>
+    <p id="score3h"></p>
+    <p id="added_together"></p>
+    <br></br>
+    <p id="wscore"></p>
+    <p id="wscoreh"></p>
+    <p id="wscore1"></p>
+    <p id="wscore1h"></p>
+    <p id="wscore2"></p>
+    <p id="wscore2h"></p>
+    <p id="wscore3"></p>
+    <p id="wscore3h"></p>
+    <p id="wadded_together"></p>
+  </div>
+
+  <script src="connect five js.js">
+  </script> 
+
+</body>
+</html>

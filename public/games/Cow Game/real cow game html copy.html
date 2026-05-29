@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>cow game</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="real cow game styles.css">
+</head>
+<body>
+
+        <div id="outerContainer">
+            <div id="container_one">
+                <img id="world0" src="./images/world0.PNG" draggable="false" (dragstart)="false;" class="unselectable" style="position: absolute; left: 965px;top: 10px;" onclick="show_container_two()"> <img>
+                <img id="world1" src="./images/world1.PNG" draggable="false" (dragstart)="false;" class="unselectable" style="position: absolute; left: 965px;top: 50px;" onclick="show_container_one()"> <img>
+                <p id="coordinates" style="position: absolute; left: 300px;top: 10px; color:darkturquoise"></p>
+            </div>
+            <div id="container_two">
+                <img id="world0" src="./images/world0.PNG" draggable="false" (dragstart)="false;" class="unselectable" style="position: absolute; left: 965px;top: 10px;" onclick="show_container_two()"> <img>
+                <img id="world1" src="./images/world1.PNG" draggable="false" (dragstart)="false;" class="unselectable" style="position: absolute; left: 965px;top: 50px;" onclick="show_container_one()"> <img>
+            </div>
+        </div>
+       <!-- <button onclick="add_cow(0, 0, 0)">create small cow</button>
+        <button onclick="remove_cow()">remove small cow</button>
+        <button onclick="get_coordinates()">get coordinates</button>
+        <button onclick="show_container_one()">world one</button>
+        <button onclick="show_container_two()">world two</button>-->
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+     <script src="real cow game js.js">
+      </script> 
+
+</body>
+</html>
