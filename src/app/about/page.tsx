@@ -14,7 +14,7 @@ export default function AboutPage() {
         <a href="/projects">here</a>.
       </p>
       <p>
-        Usually can be found in Philly or Vancouver (WA!). Otherwise, I&apos;m reaping the benefits of having older sisters in SF and DC -- thanks guys ;)
+        Usually can be found in Philly or Vancouver (WA!). Otherwise, I&apos;m reaping the benefits of having older sisters in SF and DC :)
       </p>
 
       <section className="about-section">
