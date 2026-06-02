@@ -11,7 +11,7 @@ const softwareProjects: SoftwareProject[] = [
   {
     name: 'Subly',
     description: 'Here to simplify the complicated subletting process on college campuses.',
-    url: 'https://subly-web-ez4dvmc6o-joanneelins-projects.vercel.app/',
+    url: 'https://subly-web-ioy1grr8v-joanneelins-projects.vercel.app/',
     thumbnail: '/images/projects/subly.png',
   },
   {
