@@ -9,9 +9,9 @@ type SoftwareProject = {
 
 const softwareProjects: SoftwareProject[] = [
   {
-    name: 'Subly (subletting app)',
-    description: 'Coming soon.',
-    url: null,
+    name: 'Subly',
+    description: 'Subletting website to simplify the complicated subletting process on college campuses.',
+    url: 'https://subly-web-ez4dvmc6o-joanneelins-projects.vercel.app/',
     thumbnail: null,
   },
   {
